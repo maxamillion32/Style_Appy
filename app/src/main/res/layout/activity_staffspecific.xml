@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    tools:context="foodorderingapp.apporio.com.food_app2.SpecificItemActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#000"
+        android:alpha="0.5"></LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/backgroundcolor"
+            android:gravity="left|center"
+            android:elevation="5dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="50dp"
+                android:id="@+id/back22"
+                android:layout_height="match_parent"
+                android:gravity="left|center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/back222"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/leftarrow" />
+            </LinearLayout>
+
+            <views.textview.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STAFF MEMBER"
+                geekui:customTypeface="fonts/roboto.regular.ttf"
+
+                android:id="@+id/header"
+
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:paddingBottom="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp">
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/dpimage"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                app:civ_border_color="#ffffff"
+                                app:civ_border_width="1dp"
+                                app:civ_shadow="true"
+                                android:src="@drawable/stub"
+                                app:civ_shadow_radius="1"
+                                app:civ_shadow_color="#ffffff"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp" />
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center"
+                                android:layout_weight="1">
+
+                                <views.textview.TypefaceTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loading ..."
+                                    android:id="@+id/staffname"
+                                    geekui:customTypeface="fonts/Tahoma.ttf"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp" />
+
+                                <views.textview.TypefaceTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loading ..."
+                                    android:id="@+id/staffposition"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp"
+                                    geekui:customTypeface="fonts/Tahoma.ttf"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="left|center"
+                                    android:gravity="left|center" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/colorPrimaryDark"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="10dp" />
+
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:gravity="top|left"
+                                        android:layout_marginTop="2dp">
+
+                                        <views.textview.TypefaceTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Loading ....."
+                                            android:id="@+id/descp"
+                                            geekui:customTypeface="fonts/Tahoma.ttf"
+
+                                            android:layout_gravity="center_horizontal"
+                                            android:textSize="15dp"
+                                            android:textColor="@color/colorPrimaryDark" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp" />
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <views.textview.TypefaceTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Services Offered"
+                                            android:id="@+id/cbcncb"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_marginRight="20dp"
+                                            geekui:customTypeface="fonts/Tahoma.ttf"
+                                            android:gravity="center"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textSize="20dp"
+                                            android:textColor="@color/colorPrimaryDark"
+                                            android:maxLines="2"
+                                            android:layout_marginTop="10dp" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:id="@+id/llfrservice"></LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <!--<LinearLayout-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:gravity="left|center"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:paddingTop="10dp"-->
+                            <!--android:paddingBottom="10dp"-->
+                            <!--android:layout_marginBottom="2dp"-->
+                            <!--android:id="@+id/llfortoppings">-->
+                            <!--<views.textview.TypefaceTextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Option 3"-->
+                            <!--android:id="@+id/toppings"-->
+                            <!--android:layout_weight="1"-->
+                            <!--geekui:customTypeface="fonts/Tahoma.ttf"-->
+
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginRight="10dp"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:gravity="left|center"-->
+                            <!--android:textColor="@color/colorPrimaryDark"-->
+                            <!--android:textSize="18dp" />-->
+                            <!--<views.textview.TypefaceTextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/toppingsres"-->
+                            <!--android:layout_weight="1"-->
+                            <!--geekui:customTypeface="fonts/Tahoma.ttf"-->
+
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginRight="10dp"-->
+                            <!--android:layout_marginTop="2dp"-->
+                            <!--android:gravity="center|right"-->
+                            <!--android:textColor="@color/colorPrimaryDark"-->
+                            <!--android:textSize="18dp" />-->
+                            <!--</LinearLayout>-->
+                            <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0.5dp"-->
+                            <!--android:background="@color/colorPrimaryDark2"-->
+                            <!--android:layout_marginBottom="20dp" />-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/bgforheading"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <views.ProgressWheel
+        android:id="@+id/pb11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/colorAccent"
+        wheel:matProg_progressIndeterminate="true"
+        android:layout_gravity="center"/>
+</FrameLayout>

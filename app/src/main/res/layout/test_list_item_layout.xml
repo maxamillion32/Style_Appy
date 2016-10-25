@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:id="@+id/llforintent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Class 1"
+                android:id="@+id/head"
+                geekui:customTypeface="fonts/Tahoma.ttf"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_margin="2dp">
+
+                <views.textview.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time and Duration"
+                android:id="@+id/tnd"
+                geekui:customTypeface="fonts/Tahoma.ttf"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
+                android:maxLines="1"
+                    android:layout_weight="1" />
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Staff Name"
+                    android:id="@+id/stff"
+                    geekui:customTypeface="fonts/Tahoma.ttf"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:maxLines="1"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_margin="2dp">
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:id="@+id/loc"
+                    geekui:customTypeface="fonts/Tahoma.ttf"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:maxLines="1"
+                    android:layout_weight="1" />
+
+                <views.textview.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Places Left"
+                    android:id="@+id/pllft"
+                    geekui:customTypeface="fonts/Tahoma.ttf"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:maxLines="1"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/rightarrow" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDark3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+</LinearLayout>

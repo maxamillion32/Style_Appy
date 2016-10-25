@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+
+
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.6">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+
+            android:background="#ffffff"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#808080"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="10dp">
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:id="@+id/titless"
+                        geekui:customTypeface="fonts/Tahoma.ttf"
+
+                        android:textColor="#ffffff"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Choose 1 of options :"
+                        android:id="@+id/textView6"
+                        geekui:customTypeface="fonts/Tahoma.ttf"
+
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textIsSelectable="false" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="0dp"
+
+                    android:layout_marginBottom="55dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top|center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/llforrd"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp">
+
+
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center|right"
+                    android:layout_gravity="bottom|center">
+
+                    <views.textview.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CANCEL"
+                        android:id="@+id/cncl"
+                        geekui:customTypeface="fonts/Tahoma.ttf"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:gravity="center"
+                        android:textColor="@color/backgroundcolor"
+                        android:textIsSelectable="false"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="30dp" />
+                    <views.textview.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OK"
+                        android:id="@+id/ok"
+                        geekui:customTypeface="fonts/Tahoma.ttf"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:gravity="center"
+                        android:textColor="@color/backgroundcolor"
+                        android:textIsSelectable="false"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
